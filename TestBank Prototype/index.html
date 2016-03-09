@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>
+Testbank Prototype
+</h1>
+
+<div>
+<form action="Formatter.php" method="post" enctype="multipart/form-data">
+	Select a file to upload &nbsp
+	<input type="hidden" name="MAX_FILE_SIZE" value="30000">
+	<input type="file" name="uploadFileTest" id="testfile">
+	<input type="submit" value="Send File">
+</form>
+</div>
+
+<div>
+<form action="Export.php" method="post">
+	<br/>
+	Download the temporary file &nbsp
+	<input type="submit" value="Download">
+	
+</form>
+</div>
+
+<div>
+	<br/><br/>
+	Get question by filters... *Incomplete Section*
+	<form action="ChooseSubject.php" method="post">
+	<br/>
+	<input type="submit" value="Get Question">
+	</form>
+	
+</div>
+
+
+<div>
+	<br/><br/>
+	Create question and upload by filters... *Incomplete Section*
+	
+	<form action="QuestionEdit.php" method="post">
+	<br/>
+	<input type="submit" value="Create Question">
+	</form>
+	
+</div>
+
+
+<div>
+	<br/><br/>
+	Create test and upload by filters... *Incomplete Section*
+	
+	<form action="TestEdit.php" method="post">
+	<br/>
+	<input type="submit" value="Create Test">
+	</form>
+	
+</div>
+
+<!--
+<div>
+<form id="selectionForm" method="post" action="ChooseVersion.php">
+<select name="subjectSelection" onchange="change()" style="position: relative">
+	<option value="C++">C++</option>
+	<option value="Java">Java</option>
+	<option value="Annet">Annet</option>
+</select>
+</form>
+
+<script>
+function change() {
+	document.getElementById("selectionForm").submit();
+}
+</script>
+
+</div>
+-->
+
+</body>
+</html>

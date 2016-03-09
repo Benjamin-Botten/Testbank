@@ -1,0 +1,1 @@
+Dette er tmp for C++ > 2015.
